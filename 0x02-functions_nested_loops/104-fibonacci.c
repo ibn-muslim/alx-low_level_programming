@@ -16,7 +16,9 @@ int i;
 for (i = 0; i <= 98; i++)
 {
 s = t0 + t1;
-if (i == 98)
+t0 = t1;
+t1 = s;
+if (i != 98)
 {
 printf("%lu, ", s);
 }
@@ -24,8 +26,6 @@ else
 {
 printf("%lu\n", s);
 }
-t0 = t1;
-t1 = s;
 }
 return (0);
 }
