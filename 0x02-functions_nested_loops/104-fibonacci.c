@@ -13,7 +13,7 @@ int main(void)
 {
 unsigned long int t0 = 0, t1 = 1, s;
 int i;
-for (i = 0; i <= 98; i++)
+for (i = 0; i < 98; i++)
 {
 s = t0 + t1;
 t0 = t1;
