@@ -16,16 +16,13 @@ int i;
 for (i = 0; i < 98; i++)
 {
 s = t0 + t1;
+printf("%lu, ", s)
 t0 = t1;
 t1 = s;
-if (i <= 98)
-{
-printf("%lu, ", s);
-}
+if (i == 97)
+printf("\n");
 else
-{
-printf("%lu\n", s);
-}
+printf(", ");
 }
 return (0);
 }
